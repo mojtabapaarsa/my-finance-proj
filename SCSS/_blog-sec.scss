@@ -1,0 +1,28 @@
+.blog-section{
+    position: relative;
+    padding: 0;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-image: url("../assets/images/wave.png");
+        top: 0;
+    }
+    .wave{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        animation: wave-one 2s linear infinite;
+        
+    }
+    
+}
+@keyframes wave-one {
+    0%{
+        transform: translateX(50deg);
+    }
+    100%{
+        transform: translateX(0deg);
+    }
+}

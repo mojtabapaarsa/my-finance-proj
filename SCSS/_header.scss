@@ -1,0 +1,177 @@
+// ---------------- Variables -------------------
+$main-color: #30AF5E;
+$main-color-darker: #20964b;
+$gray-color: #575757;
+$gray-light: #797979;
+$footer-color: #212529;
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+   
+    overflow: hidden;
+    color: #fff;
+    &::before {
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #020024 0%, rgba(24, 26, 24, 0.955) 2%, rgba(26, 27, 26, 0.573) 100%), url("http://trainbit.com/files/8866581484/header.jpg") center center no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+        transform: scaleX(2);
+        border-bottom: 9px solid $main-color;
+     }
+
+    //  Start navbar
+   .navbar{
+      
+
+      
+    .navbar-toggle{
+        
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+}
+ .navbar-brand{
+     color: $main-color;
+     font-weight: 700;
+
+     .nav-logo{
+         width: 70px;
+         height: auto;
+     }
+ }
+ .nav-link{
+    color: #fff !important;
+    font-size: 18px !important;
+    transition: color .3s ease !important;
+     
+    &:hover{
+        color: $main-color !important;
+    }
+ }
+   }
+
+    
+    .content {
+        position: relative;
+        z-index: 1;
+        margin: 80px auto;
+        max-width: 900px;
+        text-align: center;
+    }
+    .header-title{
+        font-size: 53px;
+        margin-bottom: 18px;
+    }
+    .header-subtitle{
+        font-size: 23px;
+        margin-bottom: 18px;
+    }
+    .header-btn{
+        background-color: $main-color;
+        border: none;
+        color: #fff;
+        margin-top: 20px;
+        transition: color .3s linear;
+        &:active{
+            transform: scale(.98);
+        }
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        &:hover{
+            background-color: $main-color-darker;
+        }
+    }
+}
+ // Sidebar Start
+
+ .mysidebar{
+    width: 250px;
+    height: 100vh;
+  background-color: $gray-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    transition: visibility .4s linear;
+    visibility: hidden;
+    
+    button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        display: block;
+       text-align: left;
+        margin-bottom: 30px;
+        margin-right: auto;
+        padding: 20px;
+        position: absolute;
+        left: 0px;
+        .close{
+            
+            color: #fff;
+           
+        }
+    }
+   .sidebar-img{
+       width: 70px;
+       height: auto;
+       text-align: center;
+      margin: 0 auto;
+
+       img{
+           width: 100%;
+       }
+   }
+   .sidebar-title{
+       color: #fff;
+       font-size: 16px;
+       text-align: center;
+       margin-top: 20px;
+   }
+    ul{
+        margin-top: 20px;
+        li{
+            padding: 10px;
+            border-bottom: 1px solid $gray-light;
+            transition:  background-color .3s linear;
+            &:hover{
+                background-color:gray;
+            }
+           
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                display: block;
+               
+            }
+
+            &:last-child{
+                border: none;
+            }
+        }
+    }
+}
+// Sidebar End
+
+@media screen and (max-width:768px) {
+     .header{
+
+        &::before{
+            transform: scaleX(2.9);
+        }
+     }
+}
