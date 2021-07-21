@@ -3,6 +3,7 @@
 @import 'steps';
 @import 'blog-sec';
 @import 'products-comment';
+@import 'newsletter';
 
 
 @import url(../assets/fonts/fontiran.css);
@@ -94,6 +95,7 @@ body{
 	padding: 0;
 	box-sizing: border-box;
 	position: relative;
+	overflow-x: hidden;
 }
 .product-list-title{
 	margin-bottom: 50px;

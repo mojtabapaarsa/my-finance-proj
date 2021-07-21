@@ -1,0 +1,45 @@
+// ---------------- Variables -------------------
+$main-color: #30AF5E;
+$gray-color: #575757;
+$gray-light: #797979;
+$footer-color: #212529;
+
+#newsletter{
+width: 100%;
+background-color: $main-color;
+padding: 20px;
+margin: 30px 0;
+color: #fff;
+
+.newsletter-title{
+    font-size: 19px;
+    font-weight: 700;
+}
+.newsletter-subtitle{
+    font-size: 15px;
+    font-weight: 400;
+}
+.newsletter-input{
+    width: 460px !important;
+    outline: none;
+    box-shadow: none;
+
+    &::placeholder{
+        text-align: right;
+    }
+}
+}
+
+@media screen and (max-width:700px) {
+    #newsletter{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        .newsletter-btn{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    }
+}

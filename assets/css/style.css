@@ -516,6 +516,61 @@
   -webkit-box-orient: vertical;
 }
 
+#newsletter {
+  width: 100%;
+  background-color: #30AF5E;
+  padding: 20px;
+  margin: 30px 0;
+  color: #fff;
+}
+
+#newsletter .newsletter-title {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+#newsletter .newsletter-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#newsletter .newsletter-input {
+  width: 460px !important;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#newsletter .newsletter-input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+#newsletter .newsletter-input:-ms-input-placeholder {
+  text-align: right;
+}
+
+#newsletter .newsletter-input::-ms-input-placeholder {
+  text-align: right;
+}
+
+#newsletter .newsletter-input::placeholder {
+  text-align: right;
+}
+
+@media screen and (max-width: 700px) {
+  #newsletter {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #newsletter .newsletter-btn {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
 @font-face {
   font-family: IRANSans;
   font-style: normal;
@@ -593,6 +648,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  overflow-x: hidden;
 }
 
 .product-list-title {
