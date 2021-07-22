@@ -1,0 +1,90 @@
+// ---------------- Variables -------------------
+$main-color: #30AF5E;
+$gray-color: #575757;
+$gray-light: #797979;
+$footer-color: #212529;
+
+footer{
+    background-color: $footer-color;
+    color: $gray-light;
+    padding: 30px 0 20px 0;
+
+    .footer-title{
+        color: $main-color;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .footer-link{
+       
+        margin-bottom: 13px;
+        position: relative;
+        a{
+            color: #efefef;
+            font-size: 13px;
+            transition: margin 0.3s linear;
+            position: relative;
+            &:hover{
+               margin: 0 7px 0 0 ;
+               color: $main-color;
+               font-weight: 700;
+             }
+
+             
+        }
+
+         
+    }
+    .footer-img{
+        border-bottom: 1px solid #efefef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    .social-links{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        justify-content: center;
+        
+        .social-link{
+            margin: 0 20px;
+            a{
+                svg{
+
+                    font-size: 21px;
+                    color: $gray-light;
+
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+
+               
+            }
+        }
+    }
+
+    .secont-footer{
+        background-color: #1d2125 !important;
+        padding: 0 !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .secont-footer-text{
+            text-align: center;
+            padding: 0;
+            margin-top: 12px;
+            strong{
+                color: red;
+                font-size: 21px;
+                vertical-align: -2px;
+
+            }
+        }
+    }
+}
+
