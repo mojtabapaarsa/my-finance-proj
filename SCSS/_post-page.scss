@@ -4,6 +4,55 @@ $gray-color: #575757;
 $gray-light: #797979;
 $footer-color: #212529;
 
+.post-page-header{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+   
+    overflow: hidden;
+    color: #fff;
+    &::before {
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  url("../images/COURSE-8.png") center center no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+        transform: scaleX(2);
+        border-bottom: 9px solid $main-color;
+}
+}
+
+.blog-page-header{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+   
+    overflow: hidden;
+    color: #fff;
+    &::before {
+
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/banner-staticPages.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+        transform: scaleX(2);
+        border-bottom: 9px solid $main-color;
+}
+}
 .post-section {
 
     margin: -130px 0 100px 0;

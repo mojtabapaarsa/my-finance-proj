@@ -14,8 +14,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(2%, rgba(24, 26, 24, 0.955)), to(rgba(26, 27, 26, 0.573))), url("https://sekansgraphy.site/Movies/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg") center center no-repeat;
-  background: linear-gradient(90deg, #020024 0%, rgba(24, 26, 24, 0.955) 2%, rgba(26, 27, 26, 0.573) 100%), url("https://sekansgraphy.site/Movies/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg") center center no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(2%, rgba(24, 26, 24, 0.955)), to(rgba(26, 27, 26, 0.573))), url("../images/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg") center center no-repeat;
+  background: linear-gradient(90deg, #020024 0%, rgba(24, 26, 24, 0.955) 2%, rgba(26, 27, 26, 0.573) 100%), url("../images/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg") center center no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -722,6 +722,56 @@ footer .secont-footer .secont-footer-text strong {
   color: red;
   font-size: 21px;
   vertical-align: -2px;
+}
+
+.post-page-header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.post-page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/COURSE-8.png") center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  border-bottom: 9px solid #30AF5E;
+}
+
+.blog-page-header {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.blog-page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/banner-staticPages.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+  -webkit-transform: scaleX(2);
+          transform: scaleX(2);
+  border-bottom: 9px solid #30AF5E;
 }
 
 .post-section {
